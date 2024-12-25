@@ -1,0 +1,29 @@
+   1  sudo apt update
+    2  sudo apt install unzip -y
+    3  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    4  unzip awscliv2.zip
+    5  sudo ./aws/install
+    6  l
+    7  aws configure
+    8  aws s3 ls
+    9  aws s3 create-bucket --bucket day5-assignment3-bucket
+   10  aws s3 create-bucket --bucket day5-assignment3-bucket -region us-east-1
+   11  aws s3 create-bucket --bucket day5-assignment3-bucket --region us-east-1
+   12  aws s3api create-bucket --bucket day5-assignment3-bucket --region us-east-1
+   13  aws s3api put-object --bucket day5-assignment3-bucket --key prod/
+   14  aws s3api put-object --bucket day5-assignment3-bucket --key nonprod/
+   15  git clone https://github.com/aayushverma19/image.git
+   16  cd image/
+   17  cp dev_test_prod_servers.gif  ../
+   18  cp nonSQL_Servr_Licensing_Guide_2.jpg  ../
+   19  cd
+   20  ls
+   21  rm -rf image/
+   22  mv dev_test_prod_servers.gif pord_image.png
+   23  mv  pord_image.png prod_image.png
+   24  mv nonSQL_Servr_Licensing_Guide_2.jpg nonprod_image.png
+   25  ls
+   26  aws s3 cp nonprod_image.png s3://day5-assignment3-bucket/nonprod/nonprod_image.png
+   27  aws s3 cp nonprod_image.png s3://day5-assignment3-bucket/prod/prod_image.png
+   28  aws iam create-user --user-name day5-testing
+   29  history 
