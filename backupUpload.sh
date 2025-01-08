@@ -3,7 +3,7 @@
 
 # Set default values
 DEFAULT_BUCKET_NAME="mysql-backup-tool-bucket"
-DEFAULT_BACKUP_PATH="/tmp/backup"
+DEFAULT_BACKUP_PATH="/tmp/demoDBbackup"
 DEFAULT_DB_USER="aayush"
 DEFAULT_DB_PASS="1234"  
 DEFAULT_DB_NAME="ninja"
