@@ -27,7 +27,7 @@ aws s3 cp s3://$BUCKET_NAME/$FOLDER_NAME/$FILE_NAME.gz $BACKUP_PATH
 gunzip $BACKUP_PATH/$FILE_NAME.gz
 
 # Restore the MySQL database
-mysql -u $DB_USER -p$DB_PASS $DB_NAME < $FILE_NAME
+mysql -u $DB_USER -p$DB_PASS $DB_NAME < $BACKUP_PATH/$FILE_NAME
 
 #remove backup file
 
