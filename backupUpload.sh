@@ -12,7 +12,7 @@ DEFAULT_DB_NAME="ninja"
 read -p "Enter the S3 bucket name [$DEFAULT_BUCKET_NAME]: " BUCKET_NAME
 BUCKET_NAME=${BUCKET_NAME:-$DEFAULT_BUCKET_NAME}
 
-read -p "Enter the path to save the backup [$DEFAULT_BACKUP_PATH]: " BACKUP_PATH
+read -p "Enter the path to save with name the backup [$DEFAULT_BACKUP_PATH]: " BACKUP_PATH
 BACKUP_PATH=${BACKUP_PATH:-$DEFAULT_BACKUP_PATH}
 
 read -p "Enter the MySQL database username [$DEFAULT_DB_USER]: " DB_USER
